@@ -8,21 +8,29 @@ export default function App() {
     return (
         <>  
             <div className="h-screen bg-blue-500">
-                <Logo></Logo>
-                <TextHeading>
-                    Verify Your Age
-                </TextHeading>
+                <div className="flex justify-center">
+                    <div>
+                        <div className=" mt-28 flex justify-center">
+                            <Logo></Logo>
+                        </div>
+                        
+                        <div className="mt-20 flex justify-center">
+                            <TextHeading>Verify Your Age</TextHeading>    
+                        </div>
 
-                <TextSmall>
-                    Please confirm your birth year. This data will not be stored.
-                </TextSmall>
+                        <div className="mt-16 flex justify-center">
+                            <TextSmall>Please confirm your birth year. This data will not be stored.</TextSmall>    
+                        </div>
 
-                <InputBox type={"text"} placeholder={"test@example.com"}>
+                        <div className="mt-4 flex justify-center">
+                            <InputBox type={"text"} placeholder={"Your Birth Year"}></InputBox>
+                        </div>
 
-                </InputBox>
-                <Button onClick={() => {console.log("FCKING KING")}}>
-                    Continue    
-                </Button>
+                        <div className="mt-6 flex justify-center">
+                            <Button>Continue</Button>
+                        </div>
+                    </div>
+                </div>                
             </div>
         </>
     )
