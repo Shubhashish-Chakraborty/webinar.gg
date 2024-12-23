@@ -3,7 +3,7 @@ export default function TextSmall({
 }) {
     return (
         <>
-            <div className="text-sm text-gray-200 font-bold">
+            <div className="text-md text-gray-200">
                 {children}
             </div>
         </>
